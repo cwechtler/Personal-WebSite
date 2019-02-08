@@ -1,0 +1,13 @@
+{
+"companyName": "Craig's Gaming",
+"productName": "Glitch Garden",
+"dataUrl": "6 Glitch Garden 2.0.data.unityweb",
+"wasmCodeUrl": "6 Glitch Garden 2.0.wasm.code.unityweb",
+"wasmFrameworkUrl": "6 Glitch Garden 2.0.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "6 Glitch Garden 2.0.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}

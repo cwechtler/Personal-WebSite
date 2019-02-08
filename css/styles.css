@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+
+hr {
+  background-color: none;
+  border-style: dotted none none;
+  border-color: #07456f;
+  border-top-width: 6px;
+  width: 40%;
+  margin: 30px auto;
+}
+
+h1 {
+  color: #105e62;
+  font-family: 'Satisfy', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #105e62;
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #105e62;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h4 {
+  color: #105e62;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 2;
+  text-indent: 20px;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #0f0a3c;
+  text-decoration: none;
+  padding: 40px;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: white;
+}
+
+em{
+  font-weight: bold;
+}
+
+.menu-bar {
+  background-color: #41aaa8;
+  width: 100%;
+  padding: 20px 0 50px;
+  position: sticky;
+}
+
+.menu-links {
+  float: right;
+}
+
+.top-container {
+  background-color: #a2eae2;
+  padding-top: 50px;
+  position: relative;
+}
+
+.subtitle {
+  font-weight: normal;
+  padding-bottom: 50px;
+}
+
+/*
+.top-cloud {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+}
+*/
+
+.gear {
+  width: 60%;
+}
+
+/* Middle Container */
+.middle-container {
+  background-color: #d7f7f5;
+  padding: 80px 0;
+}
+
+.summary {
+  width: 70%;
+  margin: auto;
+}
+
+/* Accomplishments */
+.accomp-row {
+  margin: 50px auto 40px auto;
+  width: 50%;
+  text-align: left;
+}
+.jam-table{
+  margin: 0 auto;
+  width: 100%;
+  display: table;
+}
+
+.jam-img {
+  margin-right: 30px;
+  width: 100%;
+  float: left;
+}
+
+.gamejam-text{
+  margin: 10px auto;
+}
+
+.globalgamejam {
+  margin: 0 auto 10px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.myprojects {
+  margin: 20px auto 10px auto;
+  width: 80%;
+  text-align: center;
+}
+.my-text{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.gamejam-img {
+  width: 24%;
+  padding: 0 0 20px 10px;
+}
+
+/* Skills */
+.skill-hr {
+  margin: 20px auto;
+  width: 10%;
+  border-width: 5px;
+}
+
+.skill-double-row { /* for side by side*/
+  margin: 0 auto;
+  width: 70%;
+  display: table;
+}
+
+.skill-row2 { /* for side by side*/
+  width: 50%;
+  float: left;
+}
+
+.skill-row{ /* for single row*/
+  width: 50%;
+  margin: 0 auto;
+  display: table;
+}
+
+.skill-title {
+  /*  text-decoration: underline;
+    margin-bottom: 10px; */
+}
+
+.skill-image {
+  width: 100%;
+  float: left;
+}
+
+.skill-header {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.skill-text{
+  margin: 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.skill-image-container {
+  margin-right: 10px;
+  width: 10%;
+  float: left;
+}
+
+.skill-image-container-right { /* for single row*/
+  margin-left: 10px;
+  width: 10%;
+  float: right;
+}
+
+.skill-text-container{
+  width: 75%;
+  float: left;
+}
+
+.skill-text-container-right { /* for single row*/
+  width: 75%;
+  float: right;
+}
+
+.contact-message {
+  margin: 0 auto 30px auto;
+  width: 70%;
+}
+
+.butn {
+  background: #0f0a3c;
+  background-image: -webkit-linear-gradient(top, #6fb8e8, #0f0a3c);
+  background-image: -moz-linear-gradient(top, #6fb8e8, #0f0a3c);
+  background-image: -ms-linear-gradient(top, #6fb8e8, #0f0a3c);
+  background-image: -o-linear-gradient(top, #6fb8e8, #0f0a3c);
+  background-image: linear-gradient(to bottom, #6fb8e8, #0f0a3c);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: 'Crimson Text', serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 20px 0 0;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #41aaa8;
+  background-image: -webkit-linear-gradient(top, #7ed9d4, #41aaa8);
+  background-image: -moz-linear-gradient(top, #7ed9d4, #41aaa8);
+  background-image: -ms-linear-gradient(top, #7ed9d4, #41aaa8);
+  background-image: -o-linear-gradient(top, #7ed9d4, #41aaa8);
+  background-image: linear-gradient(to bottom, #7ed9d4, #41aaa8);
+  text-decoration: none;
+}
+
+/* Bottom Container*/
+.bottom-container {
+  background-color: #41aaa8;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.copywrite {
+  color: white;
+  font-size: .75rem
+}
