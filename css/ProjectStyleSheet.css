@@ -1,14 +1,17 @@
 ﻿
-.my-projects-top-container {
-  width: 100%;
-  background-color: #d7f7f5;
-  position: fixed;
-  z-index: 1;
+.butn{
+  font-size: 125%;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
 }
 
-.projects-top-container {
+.fixed-menu-container {
+  background-color: #d7f7f5;
+}
+
+.fixed-menu-container-center {
   width: 80%;
-  height: 10%;
+  height: 100%;
   background-color: #41aaa8;
   position: relative;
   top: 0;
@@ -18,19 +21,19 @@
   border-radius: 50px;
 }
 
-.projects-title {
+.fixed-menu-title {
   margin: 0;
   font-size: 4rem;
 }
 
-.topleft-img {
+.topleft-menu-img {
   width: 8%;
   position: absolute;
   top: 20%;
   left: 20%;
 }
 
-.topright-img {
+.topright-menu-img {
   width: 7%;
   position: absolute;
   top: 10%;
@@ -43,16 +46,7 @@
   padding: 144px 50px 10px;
 }
 
-.game-container {
-    margin: auto 0;
-    width: 100%;
-}
-
-.game-left {
-    width: 63%;
-    margin: 0 auto;
-    position: relative;
-}
+/* Personal Web Page */
 .webpage-text {
     margin: 0;
     padding: 0 20px;
@@ -62,6 +56,18 @@
     padding: 5px 20px;
     text-align: center;
     text-decoration:underline;
+}
+
+/* All Game Projects */
+.game-container {
+    margin: auto 0;
+    width: 100%;
+}
+
+.game-info-div {
+    width: 63%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .game-text {
@@ -76,56 +82,29 @@
     text-decoration:underline;
 }
 
-.game-main-img{
+.lg-img-div{
     margin-top: 10px;
     width: 25%;
     display:inline-block
 }
 
-.small-imgs {
+.med-img-div {
     width: 20%;
     display: inline-block
 }
 
-.game-btn {
+.game-btn-div {
     margin: 10px 0 20px 0;
 }
 
-.game-img {
+.game-img-lg {
     width: 100%;
 }
 
-.game2-img {
+.game-img-med {
     width: 100%;
 }
 
 .footer-home{
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
-
-.btn {
-    background: #1d80c2;
-    background-image: -webkit-linear-gradient(top, #1d80c2, #06446e);
-    background-image: -moz-linear-gradient(top, #1d80c2, #06446e);
-    background-image: -ms-linear-gradient(top, #1d80c2, #06446e);
-    background-image: -o-linear-gradient(top, #1d80c2, #06446e);
-    background-image: linear-gradient(to bottom, #1d80c2, #06446e);
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    border-radius: 13px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 100%;
-    padding: 1% 3% 1% 3%;
-    text-decoration: none;
-}
-
-    .btn:hover {
-        background: #02c2bf;
-        background-image: -webkit-linear-gradient(top, #02c2bf, #038f8d);
-        background-image: -moz-linear-gradient(top, #02c2bf, #038f8d);
-        background-image: -ms-linear-gradient(top, #02c2bf, #038f8d);
-        background-image: -o-linear-gradient(top, #02c2bf, #038f8d);
-        background-image: linear-gradient(to bottom, #02c2bf, #038f8d);
-        text-decoration: none;
-    }

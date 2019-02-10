@@ -48,7 +48,7 @@ p {
 a {
   color: #0f0a3c;
   text-decoration: none;
-  padding: 40px;
+  padding: 10px 40px;
   font-size: 2rem;
 }
 
@@ -59,12 +59,23 @@ a:hover {
 em{
   font-weight: bold;
 }
+.main{
+  margin: 0;
+  display: table;
+}
 
-.menu-bar {
-  background-color: #41aaa8;
+.fixed-menu-container {
   width: 100%;
-  padding: 20px 0 50px;
-  position: sticky;
+  background-color: #41aaa8;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu-title{
+  width: 25%;
+  float: left;
+  margin: 0;
+  display: inline-block;
 }
 
 .menu-links {
@@ -82,20 +93,7 @@ em{
   padding-bottom: 50px;
 }
 
-/*
-.top-cloud {
-  position: absolute;
-  right: 200px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 200px;
-}
-*/
-
-.gear {
+.gear-img {
   width: 60%;
 }
 
