@@ -58,6 +58,11 @@
     text-decoration:underline;
 }
 
+.web-list{
+  width: 25%;
+  margin: auto;
+}
+
 /* All Game Projects */
 .game-container {
     margin: auto 0;

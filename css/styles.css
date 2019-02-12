@@ -48,18 +48,27 @@ p {
 a {
   color: #0f0a3c;
   text-decoration: none;
-  padding: 10px 40px;
-  font-size: 2rem;
+  padding: 10px 20px;
+  font-size: 1.5rem;
 }
 
 a:hover {
   color: white;
 }
 
-em{
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  list-style-image: none;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+em {
   font-weight: bold;
 }
-.main{
+
+.main {
   margin: 0;
   display: table;
 }
@@ -71,11 +80,13 @@ em{
   z-index: 1;
 }
 
-.menu-title{
+.menu-title {
+  color: #0f0a3c;
   width: 25%;
   float: left;
   margin: 0;
   display: inline-block;
+  padding: 10px;
 }
 
 .menu-links {
@@ -84,7 +95,7 @@ em{
 
 .top-container {
   background-color: #a2eae2;
-  padding-top: 50px;
+  padding: 125px 0 50px;
   position: relative;
 }
 
@@ -94,18 +105,19 @@ em{
 }
 
 .gear-img {
-  width: 60%;
+  width: 30%;
 }
 
 /* Middle Container */
 .middle-container {
   background-color: #d7f7f5;
-  padding: 80px 0;
+  padding: 50px 0 80px 0;
 }
 
 .summary {
   width: 70%;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 /* Accomplishments */
@@ -114,7 +126,8 @@ em{
   width: 50%;
   text-align: left;
 }
-.jam-table{
+
+.jam-table {
   margin: 0 auto;
   width: 100%;
   display: table;
@@ -126,7 +139,7 @@ em{
   float: left;
 }
 
-.gamejam-text{
+.gamejam-text {
   margin: 10px auto;
 }
 
@@ -136,13 +149,25 @@ em{
   text-align: center;
 }
 
-.myprojects {
-  margin: 20px auto 10px auto;
-  width: 80%;
-  text-align: center;
+.contributions-list{
+  margin: 0 auto 20px;
+  width: 100%;
+  display: table;
 }
-.my-text{
-  /*color: #105e62;*/
+.align-left{
+  padding-left: 15%;
+  margin: 0;
+  width: 40%;
+  float: left;
+}
+.zero-padding{
+  padding-left: 0;
+}
+.zero-width{
+  width: 50%;
+}
+
+.my-text {
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -152,6 +177,37 @@ em{
   padding: 0 0 20px 10px;
 }
 
+/* My Project list */
+.myprojects {
+  margin: 0px auto 30px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.my-projects-double-row{
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+  display: table;
+  padding-bottom: 20px;
+}
+.my-projects-container{
+  margin-right: 10px;
+  width: 20%;
+  float: left;
+}
+
+.my-projects-text {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.glitch-img {
+  margin-right: 30px;
+  width: 60%;
+  float: left;
+}
+
 /* Skills */
 .skill-hr {
   margin: 20px auto;
@@ -159,26 +215,25 @@ em{
   border-width: 5px;
 }
 
-.skill-double-row { /* for side by side*/
+.skill-double-row {
+  /* for side by side*/
   margin: 0 auto;
   width: 70%;
   display: table;
+  padding-bottom: 20px;
 }
 
-.skill-row2 { /* for side by side*/
+.skill-row2 {
+  /* for side by side*/
   width: 50%;
   float: left;
 }
 
-.skill-row{ /* for single row*/
+.skill-row {
+  /* for single row*/
   width: 50%;
   margin: 0 auto;
   display: table;
-}
-
-.skill-title {
-  /*  text-decoration: underline;
-    margin-bottom: 10px; */
 }
 
 .skill-image {
@@ -191,7 +246,7 @@ em{
   text-align: left;
 }
 
-.skill-text{
+.skill-text {
   margin: 0;
   text-align: left;
   line-height: 1.5;
@@ -203,18 +258,20 @@ em{
   float: left;
 }
 
-.skill-image-container-right { /* for single row*/
+.skill-image-container-right {
+  /* for single row*/
   margin-left: 10px;
   width: 10%;
   float: right;
 }
 
-.skill-text-container{
+.skill-text-container {
   width: 75%;
   float: left;
 }
 
-.skill-text-container-right { /* for single row*/
+.skill-text-container-right {
+  /* for single row*/
   width: 75%;
   float: right;
 }
