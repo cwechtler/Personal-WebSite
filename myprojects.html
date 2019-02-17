@@ -3,8 +3,18 @@
 <html>
 
 <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134638007-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-134638007-1', {'page_title' : 'myprojectspage'});
+</script>
+
   <meta charset="utf-8" />
-  <title></title>
+  <title>My Projects</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/ProjectStyleSheet.css">
   <link rel="icon" href="favicon.ico">
@@ -143,7 +153,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Space Bowl</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Space Bowl/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Space Bowl')" href="Games/Space Bowl/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -182,7 +192,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Glitch Garden</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Glitch Garden 2.0/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Glitch Garden')" href="Games/Glitch Garden 2.0/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -220,7 +230,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Galactic Gardian</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Galactic Gardian/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Galactic Gardian')" href="Games/Galactic Gardian/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -258,7 +268,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Block Attack</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Block Attack/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Block Attack')" href="Games/Block Attack/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -294,7 +304,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Number Wizard</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Number Wizard Web Build/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Number Wizard')" href="Games/Number Wizard Web Build/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -320,7 +330,7 @@
       <div class="game-info-div">
         <h2 class="game-title">Castle Quest</h2>
         <div class="game-btn-div">
-          <a class="butn" href="Games/Castle Quest/index.html">Play</a>
+          <a class="butn" onclick="gtag('event', 'Play Castle Quest')" href="Games/Castle Quest/index.html">Play</a>
         </div>
         <p class="warning">(The <em>"Escape"</em> key in game does not work in this WebGL version)</p>
         <P class="game-text">
@@ -346,8 +356,8 @@
     <div class="footer-home">
       <a class="footer-link" href="index.html">Home Page</a>
     </div>
-    <a class="footer-link" href="https://www.linkedin.com/in/craig-wechtler-4394aa177">Linkdin Profile</a>
-    <a class="footer-link" href="https://github.com/cwechtler">GitHub Profile </a>
+    <a class="footer-link" onclick="gtag('event', 'View Linkedin')" href="https://www.linkedin.com/in/craig-wechtler-4394aa177">Linkdin Profile</a>
+    <a class="footer-link" onclick="gtag('event', 'View GitHub')" href="https://github.com/cwechtler">GitHub Profile </a>
     <p class="copywrite">© 2019 Craig Wechtler.</p>
   </div>
 </body>
