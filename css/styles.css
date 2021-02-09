@@ -67,6 +67,7 @@ ul {
 em {
   font-weight: bold;
 }
+
 .warning{
   font-size: .8rem;
   text-indent: 0;
@@ -132,6 +133,26 @@ em {
   text-align: left;
 }
 
+/* Game Jam */
+.gamejam-header {
+  margin: 50px auto 10px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.gamejam-title{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 0%;
+}
+
+.gamejam-header-text{
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .jam-table {
   margin: 0 auto;
   width: 100%;
@@ -144,8 +165,18 @@ em {
   float: left;
 }
 
+.gamejam-text-container{
+  width: 90%;
+  float: left;
+}
+
 .gamejam-text {
   margin: 10px auto;
+  text-align: left;
+}
+
+.gamejam-text-spacer{
+  margin-bottom: 50px;
 }
 
 .globalgamejam {
@@ -153,6 +184,21 @@ em {
   width: 80%;
   text-align: center;
 }
+
+.gamejam-img {
+  width: 24%;
+  padding: 0 0 20px 10px;
+}
+
+.jam-double-row {
+  /* for side by side*/
+  margin: 0 auto;
+  width: 80%;
+  display: table;
+  padding-bottom: 20px;
+}
+
+
 
 .contributions-list{
   margin: 0 auto 20px;
@@ -177,10 +223,6 @@ em {
   font-size: 1.5rem;
 }
 
-.gamejam-img {
-  width: 24%;
-  padding: 0 0 20px 10px;
-}
 
 /* My Project list */
 .myprojects {
