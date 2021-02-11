@@ -5,12 +5,13 @@ body {
 }
 
 hr {
-  background-color: none;
+  background-color: transparent;
   border-style: dotted none none;
   border-color: #07456f;
   border-top-width: 6px;
   width: 40%;
   margin: 30px auto;
+  opacity: 1;
 }
 
 h1 {
@@ -22,15 +23,17 @@ h1 {
 
 h2 {
   color: #105e62;
-  font-family: 'Crimson Text', serif;
+  /* font-family: 'Crimson Text', serif; */
   font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   color: #105e62;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  margin: 0;
+  margin: auto;
 }
 
 h4 {
@@ -56,7 +59,8 @@ a:hover {
   color: white;
 }
 
-ul {
+ul{
+  margin: auto;
   list-style-type: disc;
   list-style-position: inside;
   list-style-image: none;
@@ -81,6 +85,7 @@ em {
 
 .fixed-menu-container {
   width: 100%;
+  padding: 10px 20px 10px;
   background-color: #41aaa8;
   position: fixed;
   z-index: 1;
@@ -91,8 +96,11 @@ em {
   width: 25%;
   float: left;
   margin: 0;
-  display: inline-block;
   padding: 10px;
+}
+.menu-links-container {
+  float: right;
+  margin-right: 50px;
 }
 
 .menu-links {
@@ -107,11 +115,12 @@ em {
 
 .subtitle {
   font-weight: normal;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .gear-img {
   width: 30%;
+  padding-top: 20px;
 }
 
 /* Middle Container */
@@ -205,15 +214,18 @@ em {
   width: 100%;
   display: table;
 }
+
 .align-left{
   padding-left: 15%;
-  margin: 0;
+  margin: auto;
   width: 40%;
   float: left;
 }
+
 .zero-padding{
   padding-left: 0;
 }
+
 .zero-width{
   width: 50%;
 }
@@ -341,7 +353,7 @@ em {
   font-family: 'Crimson Text', serif;
   color: #ffffff;
   font-size: 20px;
-  margin: 0 20px 0 0;
+  margin: 0;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }

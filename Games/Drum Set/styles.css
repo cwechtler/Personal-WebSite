@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+  background-color: #00204a;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DFDBE3;
+  font-family: "Arvo", cursive;
+  margin:5% 0 0;
+  /* text-shadow: 2px 0 #DA0463; */
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  bottom: 0;
+  font-size: 1rem;
+  left: 50%;
+  /* margin-left: -93px; */
+  margin-bottom: 2%;
+  /* position: absolute; */
+  text-align: center;
+}
+
+.W {
+background-image:url("images/tom1.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.A {
+  background-image:url("images/tom2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.S {
+  background-image:url("images/tom3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px;
+}
+
+.D {
+  background-image:url("images/tom4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px;
+}
+
+.J {
+  background-image:url("images/snare.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px;
+}
+
+.K {
+  background-image:url("images/crash.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: 20px;
+  background-size: 170px;
+}
+
+.L {
+  background-image:url("images/kick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  background-size: 170px;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.drum-set {
+  margin: 10% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #005792;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #fdb44b;
+  text-shadow: 8px 8px #000000;
+  border-radius: 15px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-text-links {
+  font-family: 'Indie Flower', cursive;
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #DFDBE3;
+}
+
+.footer-text {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+  color: #fff;
+}
