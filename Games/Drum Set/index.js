@@ -1,7 +1,7 @@
 var buttons = document.querySelectorAll(".drum");
 
 for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", handleClick());
+  buttons[i].addEventListener("click", handleClick);
 }
 
 document.addEventListener("keydown", function (event) {

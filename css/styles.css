@@ -1,3 +1,32 @@
+@media (max-width: 675px) {
+  .dropdown-menu{
+        height:200px;
+        overflow-y:auto;
+        overflow-x: hidden;
+     }
+  }
+
+@media screen and  (min-width: 500px) {  
+  h1.fixed-menu-title {font-size:1rem;}
+  div.border-right{border-right: none;}
+}
+ 
+@media screen and  (min-width: 768px) {  
+  h1.fixed-menu-title {font-size:2rem;} 
+  div.border-right{border-right: none;}
+}
+@media screen and  (min-width: 992px) {  
+  div.border-right{border-right:1px dotted rgb(7, 69, 111, .4);}
+}
+
+@media screen and  (min-width: 1100px) { 
+  h1.fixed-menu-title {font-size:3rem;} 
+}
+ 
+@media screen and  (min-width: 1450px) { 
+  h1.fixed-menu-title {font-size:4rem;} 
+}
+
 body {
   margin: 0;
   text-align: center;
@@ -9,21 +38,19 @@ hr {
   border-style: dotted none none;
   border-color: #07456f;
   border-top-width: 6px;
-  width: 40%;
+  width: 50%;
   margin: 30px auto;
   opacity: 1;
 }
 
 h1 {
   color: #105e62;
-  font-family: 'Satisfy', cursive;
-  font-size: 5.625rem;
-  margin: 50px auto 0 auto;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 h2 {
   color: #105e62;
-  /* font-family: 'Crimson Text', serif; */
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -60,6 +87,7 @@ a:hover {
 }
 
 ul{
+  padding-left: 20%;
   margin: auto;
   list-style-type: disc;
   list-style-position: inside;
@@ -70,6 +98,39 @@ ul{
 
 em {
   font-weight: bold;
+}
+section.anchor::before{
+  content: '';
+  display: block;
+  height:      50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
+
+.browser-games{
+  padding: 0 10%;
+}
+
+.border-right{
+  border-right:1px dotted rgb(7, 69, 111, .5);
+}
+
+.featured{
+  padding: 0;
+  background-color: #41aaa8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.two-count-column{
+  -webkit-column-width: 210px;
+  -moz-column-width: 210px;
+  column-width: 210px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 .warning{
@@ -85,26 +146,30 @@ em {
 
 .fixed-menu-container {
   width: 100%;
-  padding: 10px 20px 10px;
+  /* padding: 10px 20px 10px; */
   background-color: #41aaa8;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
 }
 
 .menu-title {
   color: #0f0a3c;
-  width: 25%;
-  float: left;
-  margin: 0;
-  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 10px 10px 40px;
+  pointer-events: none;
+  cursor: default;
 }
 .menu-links-container {
-  float: right;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .menu-links {
-  float: right;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .top-container {
@@ -120,6 +185,7 @@ em {
 
 .gear-img {
   width: 30%;
+  height: auto;
   padding-top: 20px;
 }
 
@@ -135,9 +201,64 @@ em {
   padding-bottom: 20px;
 }
 
+/* Skills */
+.skill-double-row {
+  /* for side by side*/
+  margin: 0 auto;
+  width: 70%;
+}
+
+.skill-row {
+  /* for single row*/
+  width: 50%;
+  margin: 0 auto;
+  display: table;
+}
+
+.skill-image {
+  width: 100%;
+  float: left;
+}
+
+.skill-header {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.skill-text {
+  margin: 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.skill-image-container {
+  margin-right: 10px;
+  width: 10%;
+  float: left;
+}
+
+.skill-image-container-right {
+  /* for single row*/
+  margin-left: 10px;
+  width: 10%;
+  float: right;
+}
+
+.skill-text-container {
+  width: 75%;
+  float: left;
+}
+
+.skill-text-container-right {
+  /* for single row*/
+  width: 75%;
+  float: right;
+}
+
+
 /* Accomplishments */
 .accomp-row {
-  margin: 50px auto 40px auto;
+  margin: 0px auto 40px auto;
   width: 50%;
   text-align: left;
 }
@@ -190,7 +311,7 @@ em {
 
 .globalgamejam {
   margin: 0 auto 10px auto;
-  width: 80%;
+  width: 50%;
   text-align: center;
 }
 
@@ -199,15 +320,12 @@ em {
   padding: 0 0 20px 10px;
 }
 
-.jam-double-row {
+.game-jam-rows {
   /* for side by side*/
   margin: 0 auto;
   width: 80%;
-  display: table;
   padding-bottom: 20px;
 }
-
-
 
 .contributions-list{
   margin: 0 auto 20px;
@@ -215,19 +333,12 @@ em {
   display: table;
 }
 
-.align-left{
-  padding-left: 15%;
-  margin: auto;
-  width: 40%;
-  float: left;
-}
-
 .zero-padding{
   padding-left: 0;
 }
-
-.zero-width{
-  width: 50%;
+.button-padding{
+  padding-top: 15px;
+  padding-bottom: 50px;
 }
 
 .my-text {
@@ -235,8 +346,16 @@ em {
   font-size: 1.5rem;
 }
 
-
 /* My Project list */
+
+.padding-bottom{
+  padding-bottom: 10px;
+}
+
+.my-projects-header{
+  margin-bottom: 0;
+}
+
 .myprojects {
   margin: 0px auto 30px auto;
   width: 80%;
@@ -247,8 +366,7 @@ em {
   text-align: left;
   margin: 0 auto;
   width: 50%;
-  display: table;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 .my-projects-container{
   margin-right: 10px;
@@ -265,74 +383,6 @@ em {
   margin-right: 30px;
   width: 60%;
   float: left;
-}
-
-/* Skills */
-.skill-hr {
-  margin: 20px auto;
-  width: 10%;
-  border-width: 5px;
-}
-
-.skill-double-row {
-  /* for side by side*/
-  margin: 0 auto;
-  width: 70%;
-  display: table;
-  padding-bottom: 20px;
-}
-
-.skill-row2 {
-  /* for side by side*/
-  width: 50%;
-  float: left;
-}
-
-.skill-row {
-  /* for single row*/
-  width: 50%;
-  margin: 0 auto;
-  display: table;
-}
-
-.skill-image {
-  width: 100%;
-  float: left;
-}
-
-.skill-header {
-  margin: 10px 0;
-  text-align: left;
-}
-
-.skill-text {
-  margin: 0;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.skill-image-container {
-  margin-right: 10px;
-  width: 10%;
-  float: left;
-}
-
-.skill-image-container-right {
-  /* for single row*/
-  margin-left: 10px;
-  width: 10%;
-  float: right;
-}
-
-.skill-text-container {
-  width: 75%;
-  float: left;
-}
-
-.skill-text-container-right {
-  /* for single row*/
-  width: 75%;
-  float: right;
 }
 
 .contact-message {

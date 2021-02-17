@@ -1,5 +1,6 @@
 ﻿
 ol{
+  padding-left: 20%;
   list-style-position: inside;
   list-style-image: none;
   text-align: left;
@@ -13,21 +14,35 @@ a{
   font-size: 1.3rem;
 }
 
+a.menu-links{
+}
+
 .butn{
   font-size: 125%;
   padding: 1% 3% 1% 3%;
   text-decoration: none;
 }
 
-.home-link{
-  font-size: 1.7rem;
-  position: absolute;
-  top: 15%;
-  left: 5%;
+.my-projects-nav{
+  margin: auto;
+  background-color: #41aaa8;
+  width: 50%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 50px;
+  
 }
 
-.fixed-menu-container {
-  background-color: #d7f7f5;
+.source-code-text{
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home-link{
+  margin: .5% 4% 0 3.4% ;
+  font-size: 1.7rem;
+  float: left;
 }
 
 .fixed-menu-container-center {
@@ -43,29 +58,27 @@ a{
 }
 
 .fixed-menu-title {
-  margin: 0;
+  margin: auto;
+  width: 50%;
   font-size: 4rem;
+  display: inline-block;
 }
 
 .topleft-menu-img {
-  width: 8%;
-  position: absolute;
-  top: 20%;
-  left: 20%;
+  margin-top: 2%;
+  width: 12%;
+  vertical-align: top;
 }
 
 .topright-menu-img {
-  width: 7%;
-  height: auto;
-  position: absolute;
-  top: 5%;
-  right: 20%;
+  margin-top: 1%;
+  width: 11%;
+  vertical-align: top;
 }
 
 .projects-middle-container {
-
   background-color: #d7f7f5;
-  padding: 144px 50px 10px;
+  padding: 80px 50px 10px;
 }
 
 /* Personal Web Page */
@@ -74,14 +87,14 @@ a{
     padding: 0 20px;
 }
 .webpage-title {
-  margin: 82px 0 0 0;
-  padding: 5px 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration:underline;
 }
 
 .web-list{
-  width: 25%;
+  width: 50%;
   margin: auto;
 }
 
@@ -106,6 +119,11 @@ a{
     width: 100%;
 }
 
+.browser-game-div{
+  margin: 0 auto;
+  position: relative;
+}
+
 .game-info-div {
     width: 63%;
     margin: 0 auto;
@@ -113,21 +131,22 @@ a{
 }
 
 .game-text {
+  line-height: 1.5;
     margin: 0;
-    padding: 0 20px;
-    text-align: left;
+    padding: 0 20px 20px;
+    text-align: Center;
 }
 
 .game-title {
     padding: 5px 20px;
-    margin-top: 82px;
+    /* margin-top: 75px; */
     text-align: center;
     text-decoration:underline;  
 }
 
 .lg-img-div{
     margin-top: 10px;
-    width: 25%;
+    width: 40%;
     display:inline-block;
 }
 
@@ -142,12 +161,9 @@ a{
 
 .game-img-lg {
     width: 100%;
+    border-radius: 25px;
 }
 
 .game-img-med {
     width: 100%;
-}
-
-.footer-home{
-  margin-bottom: 18px;
 }

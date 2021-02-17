@@ -8,6 +8,8 @@ var diceImage2 = document.querySelector(".img2");
 button.onclick = function() {Roll();};
 
 function Roll(){
+  audio.pause();
+  audio.currentTime = 0;
   audio.play();
 
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;

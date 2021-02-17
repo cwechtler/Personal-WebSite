@@ -1,0 +1,129 @@
+body {
+  background-color: #26718f;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+footer {
+  color: #fff;
+  font-family: "Merienda", cursive;
+  text-align: center;
+}
+
+#start{
+  appearance: Button;
+  border: 3px solid #002f4e;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.start-button{
+text-align: center;
+}
+
+.notpressed{
+  background-color:#fbfd8a;
+  padding: 0 25px 0 25px;
+}
+
+.notpressed:hover{
+  background-color: #fff;
+}
+
+.pressed {
+  box-shadow: 0 0 70px white;
+  background-color: grey;
+  padding: 0 15px 0 15px;
+}
+
+.title {
+  color: #fff;
+  font-family: "Merienda", cursive;
+  font-size: 8rem;
+  text-shadow: 5px 4px #000000;
+}
+
+.info-text {
+  color: #fbfd8a;
+  font-family: "Sriracha", cursive;
+  font-size: 4rem;
+  text-shadow: 3px 2px #000000;
+}
+
+.container {
+  text-align: center;
+}
+
+.button {
+  border-color: #002f4e;
+  border-width: 0.8rem;
+  border-radius: 3rem;
+  border-style: solid;
+  box-shadow: 7px 7px #000000;
+  margin: 30px 30px;
+  width: 250px;
+  height: 250px;
+}
+
+#pressed {
+  box-shadow: 0 0 20px white;
+  background-color: rgb(102, 102, 102);
+}
+
+#simon-pressed{
+  box-shadow: 0 0 20px white;
+  background-color: #fff;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.gameover{
+  position: relative;
+}
+
+.gameover-text{
+  color: red;
+  font-family: "Merienda", cursive;
+  font-size: 10rem;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide{
+  display: none;
+}
+
+.footer-text-links {
+  font-family: "Sriracha", cursive;
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #DFDBE3;
+}

@@ -4,65 +4,122 @@
 
 <head>
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134638007-1"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134638007-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
- gtag('config', 'UA-134638007-1', {'page_title' : 'My Projects page'});
-</script>
+  gtag('config', 'UA-134638007-1', {'page_title' : 'My Projects page'});
+  </script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8" />
   <title>Craig Wechtler Projects</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/ProjectStyleSheet.css">
 
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat" rel="stylesheet">
+
 </head>
 
 <body id="top-of-page">
-  <div class="fixed-menu-container">
-    <div class="fixed-menu-container-center">
-      <a class="home-link"  href="index.html">Home Page</a>
-      <img class="topleft-menu-img" src="images/Unity3D2.png" alt="Alternate Text" />
-      <h2 class="fixed-menu-title">My Projects</h2>
-      <img class="topright-menu-img" src="images/controller1.png" alt="Alternate Text" />
-    </div>
+
+  <div name= "Navbar" class="fixed-menu-container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand menu-title" href="#">Craig Wechtler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 menu-links-container">
+            <li class="nav-item">
+              <a class="menu-links" aria-current="page" onclick="gtag('event', 'Home Page')" href="index.html">Home Page</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="menu-links active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Games
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col-sm">
+                    <li><a class="dropdown-item" href="#top-of-page">Top of Page</a></li>
+                    <li><a class="dropdown-item" href="index.html#Contact-Me">Contact Me</a></li>
+
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#This-Website">This Website</a></li>
+
+                    <li><hr class="dropdown-divider">Browser Games</li>
+                    <li><a class="dropdown-item" href="#Web-Browser">Simon Says</a></li>
+                    <li><a class="dropdown-item" href="#Web-Browser">Drum Set</a></li>
+                    <li><a class="dropdown-item" href="#Web-Browser">Roll The Dice</a></li>
+                  </div>
+                  <div class="col-sm">
+                    <li><hr class="dropdown-divider">Unity WebGL Games</li>
+                    <li><a class="dropdown-item" href="#Isometric-RPG">Isometric RPG</a></li>
+                    <li><a class="dropdown-item" href="#Night-in-the-Valley-of-the-Dead">Night in the Valley of the Dead</a></li>              
+                    <li><a class="dropdown-item" href="#Sunshine-Globs">Sunshine Globs</a></li>
+                    <li><a class="dropdown-item" href="#Shut-Eye">Shut-Eye</a></li
+                    <li><a class="dropdown-item" href="#Space-Bowl">Space Bowl</a></li>
+                    <li><a class="dropdown-item" href="#Glitch-Garden">Glitch Garden</a></li>
+                    <li><a class="dropdown-item" href="#Galactic-Gardian">Galactic Gardian</a></li>
+                    <li><a class="dropdown-item" href="#Block-Attack">Block Attack</a></li>
+                    <li><a class="dropdown-item" href="#Number-Wizard">Number-Wizard</a></li>
+                    <li><a class="dropdown-item" href="#Castle-Quest">Castle Quest</a></li>
+                  </div>
+                </div>   
+              </ul>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="menu-links active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Apps
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#top-of-page">Top of Page</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#Web-Browser">Tipping point</a></li>
+                <li><a class="dropdown-item" href="#Web-Browser">Wechflix </a></li>
+                <li><a class="dropdown-item" href="#Web-Browser">Blog Website</a></li>
+                <li><a class="dropdown-item" href="#Web-Browser">ToDo List</a></li>
+                <li><a class="dropdown-item" href="#Web-Browser">Weather App</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="menu-links" aria-current="page" onclick="gtag('event', 'View Linkedin')" href="https://www.linkedin.com/in/craig-wechtler-4394aa177">Linkdin</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu-links" aria-current="page" onclick="gtag('event', 'View GitHub')" href="https://github.com/cwechtler">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 
   <div class="projects-middle-container">
-    <section name="Table-of-Contents">
-      <div class="contents-container">
-        <h2 class="content-text">Contents</h2>
-        <div class="contents-info-div">
-          <ol >
-            <li><a href="myprojects.html#This-Website">This Website</a></li>
-            <li><a href="myprojects.html#Isometric-RPG">Isometric RPG</a></li>
-            <li><a href="myprojects.html#Night-in-the-Valley-of-the-Dead">Night in the Vally of the Dead</a></li>
-            <li><a href="myprojects.html#Space-Bowl">Space Bowl</a></li>
-            <li><a href="myprojects.html#Glitch-Garden">Glitch Garden</a></li>
-            <li><a href="myprojects.html#Galactic-Gardian">Galactic Gardian</a></li>
-  
-            <li><a href="myprojects.html#Block-Attack">Block Attack</a></li>
-            <li><a href="myprojects.html#Number-Wizard">Number-Wizard</a></li>
-            <li><a href="myprojects.html#Castle-Quest">Castle Quest</a></li>
-          </ol>
-        </div>
-      </div>
-    </section>
+    <div class="my-projects-nav container-fluid">
+      <img class="topleft-menu-img" src="images/Unity3D2.png" alt="Alternate Text" />
+      <h1 class="fixed-menu-title .text-responsive">My Projects</h1>
+      <img class="topright-menu-img" src="images/controller1.png" alt="Alternate Text" />
+    </div>
+    <p class="source-code-text">Visit my GitHub to view source code</p>
 
-    <section  id="This-Website">
+    <section class="anchor" id="This-Website">
       <hr>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="webpage-title">This Website</h2>
           <P class="webpage-text">
             My personel web site you are currently viewing.
             <div class="web-list">
-              <ul>
+              <ul class="two-count-column">
                 <li>HTML programmer.</li>
                 <li>CSS programmer.</li>
               </ul>
@@ -72,10 +129,79 @@
       </div>
     </section>
 
-    <section id = "Isometric-RPG">
+    <section class="anchor" id="Web-Browser">
       <hr>
 
-      <div class="game-container">
+      <div class="container-fluid row browser-games">
+        <div id="Simon-Says" class="col-lg border-right">
+          <div class=" container-fluid">
+            <div class="browser-game-div">
+              <h2 class="webpage-title">Simon Says</h2>
+              <div class="game-btn-div">
+                <a class="butn" onclick="gtag('event', 'Play The Memory Game')" href="Games/Simon Says Game/index.html">Play</a>
+              </div>
+              <P class="game-text">This is a web browser Simon memory game clone. 
+                <br>
+                <em>How many sequences can you remember</em>
+              </P>
+              <div class="contributions-list">
+                <ul class="two-count-column">
+                  <li>Javascript programmer.</li>
+                  <li>HTML programmer.</li>
+                  <li>CSS programmer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Roll-The-Dice" class="col-lg border-right">
+          <div class=" container-fluid">
+            <div class="browser-game-div">
+              <h2 class="webpage-title">Roll The Dice</h2>
+              <div class="game-btn-div">
+                <a class="butn" onclick="gtag('event', 'Play Roll The Dice')" href="Games/Roll The Dice/index.html">Play</a>
+              </div>
+              <P class="game-text">This is a web browser dice game
+                <br> 
+                <em>High roller wins web browser dice rolling game</em></P>
+              <div class="contributions-list">
+                <ul class="two-count-column">
+                  <li>Javascript programmer.</li>
+                  <li>HTML programmer.</li>
+                  <li>CSS programmer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Drum-Set" class="col-lg">
+          <div class=" container-fluid">
+            <div class="browser-game-div">
+              <h2 class="webpage-title">Drum Set</h2>
+              <div class="game-btn-div">
+                <a class="butn" onclick="gtag('event', 'Play Drum Set')" href="Games/Drum Set/index.html">Play</a>
+              </div>
+              <P class="game-text">This is a web browser drum set.
+                <br>
+                <em>Click the buttons to play the drums</em>
+              </P>
+              <div class="contributions-list">
+                <ul class="two-count-column">
+                  <li>Javascript programmer.</li>
+                  <li>HTML programmer.</li>
+                  <li>CSS programmer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section class="anchor" id = "Isometric-RPG">
+      <hr>
+
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Isometric RPG</h2>
           <div class="game-btn-div">
@@ -83,18 +209,16 @@
           </div>
           <p class="warning">(<em>"Not Playable"</em>)</p>
           <P class="game-text">
-            This is an Isometric Diablo style RPG game built with Unity3D & C#.
+            This is an Isometric Diablo style RPG game built with C# & Unity3D.
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul class="two-count-column">
               <li>Player controller programmer.</li>
               <li>Player and Enemy AI programmer.</li>
               <li>Player special abilities programmer.</li>
               <li>Weapon systems programmer.</li>
               <li>Inventory programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
-              <li>Music and sound management programmer.</li>
+              <li>Audio management programmer.</li>
               <li>Camera & UI programmer.</li>
               <li>Unity 3D Game Developer.</li>
               <li>Unity 3D Level Designer.</li>
@@ -102,31 +226,49 @@
             </ul>
           </div>
         </div>
-        <div>
-          <div class="lg-img-div"  >
-            <img class="game-img-lg" src="images/Isometric RPG1.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/Isometric RPG2.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/Isometric RPG3.png" alt="Game Image" />
-          </div>
-          <br />
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/Isometric RPG4.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/Isometric RPG5.png" alt="Game Image" />
+        <div class="lg-img-div">
+          <div id="rpg-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#rpg-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#rpg-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#rpg-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#rpg-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#rpg-carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/Isometric RPG1.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Isometric RPG2.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Isometric RPG3.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Isometric RPG4.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Isometric RPG5.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#rpg-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bold" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#rpg-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon bold" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section id = "Night-in-the-Valley-of-the-Dead">
+    <section class="anchor" id = "Night-in-the-Valley-of-the-Dead">
       <hr />
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Night in the Valley of the Dead</h2>
           <div class="game-btn-div">
@@ -134,16 +276,20 @@
           </div>
           <p class="warning">(<em>"Not Playable"</em>)</p>
           <P class="game-text">
-            This is a first person survival shooter built with Unity3D & C#.  Find the clues to locate the antidote and escape the valley.
+            This is a first person survival shooter built with C# & Unity3D. 
+            <br> 
+            <em>A Secret Government Biochemist Lab was Developing and testing a super solder formula. 
+              Something went terribly wrong and mutated the test subjects into a state between dead and alive.
+              <br>
+              <br>
+              Your Mission: Locate and retrieve any notes on the formula or an antidote in order to call in your extraction.</em> 
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul class="two-count-column">
               <li>Enemy AI programmer.</li>
               <li>Weapon systems programmer.</li>
               <li>Inventory programmer.</li>
-              <li>Music and sound management programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
+              <li>Audio management programmer.</li>
               <li>Camera & UI programmer.</li>
               <li>Unity 3D Game Developer.</li>
               <li>Unity 3D Level Designer.</li>
@@ -153,101 +299,308 @@
         </div>
         <div>
           <div class="lg-img-div">
-            <img class="game-img-lg" src="images/NightInTheValleyMain.png" alt="Game Image" />
-          </div>
-          <div class="lg-img-div">
-            <img class="game-img-lg" src="images/NightInTheValleyOptions.png" alt="Game Image" />
-          </div>
-          <br>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/NightInTheValleyWorld.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/NightInTheValleyUnderWater.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/NightInTheValleyflare.png" alt="Game Image" />
-          </div>
-          <br>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/NightInTheValleyTown.png" alt="Game Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/NightInTheValleyLab.png" alt="Game Image" />
+            <div id="night-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#night-carousel" data-bs-slide-to="6" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval="5000"">
+                  <img src="images/NightInTheValleyMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyOptions.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyWorld.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyUnderWater.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyflare.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyTown.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/NightInTheValleyLab.png" class="game-img-lg d-block w-100" alt="Game Image">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#night-carousel"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#night-carousel"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="anchor" id = "Sunshine-Globs">
+      <hr>
+
+      <div class="game-container container-fluid">
+        <div class="game-info-div">
+          <h2 class="game-title">Sunshine Globs</h2>
+          <div class="game-btn-div">
+            <a class="butn" onclick="gtag('event', 'Play Sunshine Globs')" href="Games/Sunshine Globs v1.3/index.html">Play</a>
+            <!-- <a class="butn" onclick="gtag('event', 'Featured')" href="index.html#Game-Jam">Featured</a> -->
+          </div>
+          <P class="game-text">
+            This is a game built with C# & Unity3D during the Global Game Jam 2021 listed as <a class="featured" href="index.html#Game-Jam">Featured</a> on the home page. 
+            <br>
+            <em>You are a sunshine glob in the garden of the mind.
+              When your sunshine glob friends evolve into thought bubbles, you are sent on a quest to find four
+              brilliancy charms hidden throughout the garden so that you too can ascend to enlightenment.
+              Navigate through mazes and obstacles to collect the charms!</em>
+          </P>
+          <div class="contributions-list">
+            <ul class="two-count-column">
+              <li>Game mechanics programmer</li>
+              <li>Level management programmer.</li>
+              <li>Audio management programmer</li>
+              <li>UI programmer.</li>
+              <li>Unity 3D Game Developer</li>
+              <li>Unity 3D Level Designer</li>
+            </ul>
+          </div>
+          <div class="contributions-list">
+            <h3 class="gamejam-title">Credits</h3>
+            <ul class="two-count-column">
+              <li>Craig Wechtler, Lead Developer</li>
+              <li>Pete Hurl, Assistant Developer</li>
+              <li>Riley Circles, Lead Designer</li>
+              <li>Maria Brock, Designer & Developer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg-img-div">
+          <div id="glob-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#glob-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <!-- <button type="button" data-bs-target="#glob-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#glob-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/SunshineGlobsMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="" class="game-img-lg d-block w-100" alt="Game Image">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#glob-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#glob-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="anchor" id = "Shut-Eye">
+      <hr>
+
+      <div class="game-container container-fluid">
+        <div class="game-info-div">
+          <h2 class="game-title">Shut-Eye</h2>
+          <div class="game-btn-div">
+            <a class="butn" onclick="gtag('event', 'Play Shut-Eye')" href="Games/Shut-Eye 1.1/index.html">Play</a>
+            <!-- <a class="butn" onclick="gtag('event', 'Featured')" href="index.html#Game-Jam">Featured</a> -->
+          </div>
+          <P class="game-text">
+            This is a game built with C# & Unity3D during the Global Game Jam 2019 listed as <a class="featured" href="index.html#Game-Jam">Featured</a> on the home page. 
+            <br>
+            <em>In a dream, you run from a nightmare while gathering things that remind you of your home and of
+              safety. Make it home before your nightmare catches you.</em>
+          </P>
+          <div class="contributions-list">
+            <ul class="two-count-column">
+              <li>Game mechanics programmer</li>
+              <li>Audio management programmer</li>
+              <li>UI programmer.</li>
+              <li>Unity 3D Game Developer</li>
+              <li>Unity 3D Level Designer</li>
+            </ul>
+          </div>
+          <div class="contributions-list">
+            <h3 class="gamejam-title">Credits</h3>
+            <ul class="two-count-column">
+              <li>Craig Wechtler, Lead Developer</li>
+              <li>Patrick Granato, 2D Art</li>
+              <li>Victor Chavez, 3D Art</li>
+              <li>Daniel Vitale, Audio Designer</li>
+              <li>Ross Cooper, Audio Designer</li>
+              <li>Cody Saffel, Audio Designer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg-img-div">
+          <div id="shut-eye-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#shut-eye-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#shut-eye-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#shut-eye-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/ShutEyeMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GP1.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GP2.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#shut-eye-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#shut-eye-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </section>
     
-    <section id = "Space-Bowl">
+    <section class="anchor" id = "Space-Bowl">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Space Bowl</h2>
           <div class="game-btn-div">
             <a class="butn" onclick="gtag('event', 'Play Space Bowl')" href="Games/Space Bowl/index.html">Play</a>
           </div>
-          <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a 3D space bowling game for android built with Unity3D & C#.  Select a planet to be your ball, choose your music, and bowl away.
-            dont forget to use your bumpers.
+            This is a 3D bowling game built with C# & Unity3D designed for android devices. 
+            <br> 
+            <em>Enter your name, select a planet to be your ball, choose your music, and bowl away.
+            <br>
+            Dont forget to use your bumpers.</em> 
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul class="two-count-column">
               <li>Ball select programmer.</li>
               <li>Camera & UI programmer.</li>
-              <li>Music and sound management programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
+              <li>Audio management programmer.</li>
               <li>Unity 3D Game Developer.</li>
               <li>Unity 3D Level Designer.</li>
               <li>Unity 3D particle effects.</li>
             </ul>
           </div>
         </div>
-        <div>
-          <div class="lg-img-div">
-            <img class="game-img-lg" src="images/SpaceBowlMain.png" alt="spacebowlmain Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/SpaceBowlBall.png" alt="spacebowlball Image" />
-          </div>
-          <div class="med-img-div">
-            <img class="game-img-med" src="images/SpaceBowlBowling2.png" alt="spacebowlbowling Image" />
+        <div class="lg-img-div">
+          <div id="bowl-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#bowl-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#bowl-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#bowl-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#bowl-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/SpaceBowlMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/SpaceBowlOption.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/SpaceBowlBall.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/SpaceBowlBowling2.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bowl-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bowl-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section id = "Glitch-Garden">
+    <section class="anchor" id = "Glitch-Garden">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Glitch Garden</h2>
           <div class="game-btn-div">
             <a class="butn" onclick="gtag('event', 'Play Glitch Garden')" href="Games/Glitch Garden 2.0/index.html">Play</a>
           </div>
-          <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a 2D plants Vs Zombies clone for android built with Unity3D & C#.  Place your defenders/blockers in a lane.
-            be carful not to run out of stars.  Build star makers to keep a steady flow of incoming stars to spend.
+            This is a 2D plants Vs Zombies clone built with C# & Unity3D designed for android devices.
+            <br> 
+            <em>Defend your garden from being eaten. Dont let any hungry intruders past you. 
+            <br>
+            Spend stars to place your defenders or blockers in a lane.
+            Be carful not to run out of stars!  
+            Build star makers to keep a steady flow of incoming stars to spend.</em> 
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul class="two-count-column">
               <li>Enemy controller programmer.</li>
               <li>Level management & selector programmer.</li>
               <li>UI programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
-              <li>Music and sound management programmer.</li>
+              <li>Audio management programmer.</li>
               <li>Unity 3D Level Designer.</li>
             </ul>
           </div>
         </div>
-        <div>
-          <div class="lg-img-div">
+        <div class="lg-img-div">
+          <div id="glitch-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#glitch-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#glitch-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#glitch-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/GlitchGardenMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GlitchGardenPlaying.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GlitchGardenSelect.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#glitch-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#glitch-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+          <!-- <div class="lg-img-div">
             <img class="game-img-lg" src="images/GlitchGardenMain.png" alt="Game Image" />
           </div>
           <div class="med-img-div">
@@ -255,38 +608,68 @@
           </div>
           <div class="med-img-div">
             <img class="game-img-med" src="images/GlitchGardenSelect.png" alt="Game Image" />
-          </div>
-        </div>
+          </div> -->
+
       </div>
     </section>
 
-    <section id = "Galactic-Gardian">
+    <section class="anchor" id = "Galactic-Gardian">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Galactic Gardian</h2>
           <div class="game-btn-div">
             <a class="butn" onclick="gtag('event', 'Play Galactic Gardian')" href="Games/Galactic Gardian/index.html">Play</a>
           </div>
-          <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a 2D space shooter built with Unity3D & C#.  Destroy your enemies before they destroy you. Beat all waves to win.
+            This is a 2D space shooter built with C# & Unity3D. 
+            <br> 
+            <em> An alien race is attacking your planet you must destroy your enemies before they destroy you. 
+              <br>
+              Beat all waves to win.</em>
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
-              <li>player controller programmer.</li>
+            <ul class="two-count-column">
+              <li>Player controller programmer.</li>
               <li>Enemy & supply ship spawner/movement programmer.</li>
               <li>UI programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
-              <li>Music and sound management programmer.</li>
+              <li>Audio management programmer.</li>
               <li>Unity 3D Level Designer.</li>
               <li>Unity 3D particle effects.</li>
             </ul>
           </div>
         </div>
-        <div>
+        <div class="lg-img-div">
+          <div id="gardian-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#gardian-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#gardian-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#gardian-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/GalacticGardianMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GalacticGardianPlaying.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/GalacticGardianloose.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gardian-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gardian-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- <div>
           <div class="lg-img-div">
             <img class="game-img-lg" src="images/GalacticGardianMain.png" alt="Game Image" />
           </div>
@@ -296,14 +679,14 @@
           <div class="med-img-div">
             <img class="game-img-med" src="images/GalacticGardianloose.png" alt="Game Image" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section id = "Block-Attack">
+    <section class="anchor" id = "Block-Attack">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Block Attack</h2>
           <div class="game-btn-div">
@@ -311,20 +694,49 @@
           </div>
           <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a 2D pong style block breaker game built with Unity3D & C#.  Break all the blocks to move on to the next level.
+            This is a 2D pong style block breaker game built with C# & Unity3D.  
+            <br> 
+            <em>Break all the blocks to move on to the next level.</em>
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul class="two-count-column">
               <li>UI programmer.</li>
-              <li>Music and sound management programmer.</li>
-            </ul>
-            <ul class="align-left zero-padding">
+              <li>Audio management programmer.</li>
               <li>Unity 3D Level Designer.</li>
               <li>Unity 3D particle effects.</li>
             </ul>
           </div>
         </div>
-        <div>
+        <div class="lg-img-div">
+          <div id="block-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#block-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#block-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#block-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active data-bs-interval="5000"">
+                <img src="images/BlockAttackMain.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/BlockAttacklevel1.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+              <div class="carousel-item">
+                <img src="images/BlockAttacklevel2.png" class="game-img-lg d-block w-100" alt="Game Image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#block-carousel"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#block-carousel"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- <div>
           <div class="lg-img-div">
             <img class="game-img-lg" src="images/BlockAttackMain.png" alt="Game Image" />
           </div>
@@ -334,14 +746,14 @@
           <div class="med-img-div">
             <img class="game-img-med" src="images/BlockAttacklevel2.png" alt="Game Image" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section id = "Number-Wizard">
+    <section class="anchor" id = "Number-Wizard">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Number Wizard</h2>
           <div class="game-btn-div">
@@ -349,10 +761,12 @@
           </div>
           <p class="warning">(The <em>"Quit"</em> button in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a simple text number guessing game built with Unity3D & C#.
+            This is a number guessing game built with C# & Unity3D.
+            <br>
+            <em>Think of a number between 1-1000 and see if the wizard can guess your number</em>
           </P>
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul>
               <li>Game programmer.</li>
               <li>UI programmer.</li>
             </ul>
@@ -366,22 +780,26 @@
       </div>
     </section>
 
-    <section id = "Castle-Quest">
+    <section class="anchor" id = "Castle-Quest">
       <hr/>
 
-      <div class="game-container">
+      <div class="game-container container-fluid">
         <div class="game-info-div">
           <h2 class="game-title">Castle Quest</h2>
           <div class="game-btn-div">
             <a class="butn" onclick="gtag('event', 'Play Castle Quest')" href="Games/Castle Quest/index.html">Play</a>
           </div>
-          <p class="warning">(The <em>"Escape"</em> key in game does not work in this WebGL version)</p>
           <P class="game-text">
-            This is a simple text choose your own adventure game built with Unity3D & C#.
+            This is a text choose your own adventure game built with C# & Unity3D.
+            <br>
+            <em>You are a great knight of times past called upon to save the princess.
+              <br>
+              Can you save her from the evil wizard?
+            </em>
           </P>
   
           <div class="contributions-list">
-            <ul class="align-left">
+            <ul>
               <li>Game programmer.</li>
               <li>UI programmer.</li>
             </ul>
@@ -396,14 +814,15 @@
     </section>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+
+<Footer>
   <div class="bottom-container">
-    <div class="footer-home">
-      <a class="footer-link" href="#top-of-page">Go To Top</a>
-    </div>
-    <a class="footer-link" onclick="gtag('event', 'View Linkedin')" href="https://www.linkedin.com/in/craig-wechtler-4394aa177">Linkdin</a>
-    <a class="footer-link" onclick="gtag('event', 'View GitHub')" href="https://github.com/cwechtler">GitHub</a>
+    <a class="footer-link" href="#top-of-page">Go To Top</a>
     <p class="copywrite">© 2019 Craig Wechtler.</p>
   </div>
-</body>
+</Footer>
 
 </html>
