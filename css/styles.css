@@ -1,12 +1,12 @@
-@media (max-width: 675px) {
-  .dropdown-menu{max-height:300px; overflow-y:auto; overflow-x: hidden;}
+@media screen and (max-width: 675px) {
   p.summary{width: 100%;}
   div.skill-double-row{width: 100%;}
   div.gamejam-header{width: 100%;}
+  div.globalgamejam{width: 100%;}
   div.accomp-row{width: 100%;}
   div.my-projects-double-row{width: 100%;}
   }
-
+  
 @media screen and  (max-width: 768px) {  
   h1.fixed-menu-title {font-size:1rem;}
   div.border-right{border-right: none;}
@@ -16,7 +16,14 @@
   h1.fixed-menu-title {font-size:2rem;} 
   div.border-right{border-right: none;}
 }
+
+@media screen and  (max-width: 992px) {  
+  .dropdown-menu{height: auto; max-height: calc(100vh - 200px); overflow-y:auto; overflow-x: hidden;}
+  hr.web-browser-hr{display: block; width: 60%; clear: none; visibility: visible;}
+}
+
 @media screen and  (min-width: 992px) {  
+  .dropdown-menu{height: auto; max-height: calc(100vh - 80px); overflow-y:auto; overflow-x: hidden;}
   div.border-right{border-right:1px dotted rgb(7, 69, 111, .4);}
 }
 
@@ -106,6 +113,13 @@ section.anchor::before{
   display: block;
   height:      50px;
   margin-top: -50px;
+  visibility: hidden;
+}
+
+.web-browser-hr{
+  display: none;
+  width: 50%;
+  clear: both;
   visibility: hidden;
 }
 
@@ -303,7 +317,7 @@ section.anchor::before{
   padding-left: 0;
 }
 .button-padding{
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
@@ -363,13 +377,14 @@ section.anchor::before{
   background-image: linear-gradient(to bottom, #6fb8e8, #0f0a3c);
   -webkit-border-radius: 13;
   -moz-border-radius: 13;
-  border-radius: 13px;
+  border-radius: 1rem;
   font-family: 'Crimson Text', serif;
   color: #ffffff;
   font-size: 20px;
-  margin: 0;
+  margin: 5px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  display:inline-block;
 }
 
 .butn:hover {
