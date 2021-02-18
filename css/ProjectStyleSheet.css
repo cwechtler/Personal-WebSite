@@ -1,4 +1,10 @@
 ﻿
+@media (max-width: 675px) {
+  div.game-info-div {width: 100%;}
+  div.lg-img-div{width: 100%;}
+  div.browser-games{padding: 0;}
+  }
+
 ol{
   padding-left: 20%;
   list-style-position: inside;
@@ -31,31 +37,12 @@ a.menu-links{
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 50px;
-  
 }
 
 .source-code-text{
   margin: 0;
   font-weight: bold;
   font-size: 1.5rem;
-}
-
-.home-link{
-  margin: .5% 4% 0 3.4% ;
-  font-size: 1.7rem;
-  float: left;
-}
-
-.fixed-menu-container-center {
-  width: 80%;
-  height: 100%;
-  background-color: #41aaa8;
-  position: relative;
-  top: 0;
-  left: 10%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 50px;
 }
 
 .fixed-menu-title {
@@ -100,21 +87,6 @@ a.menu-links{
 }
 
 /* All Game Projects */
-.content-text{
-  margin-top: 0;
-}
-.contents-container{
-  margin:  auto;
-  padding-bottom: 20px;
-  width: 75%;
-}
-
-.contents-info-div {
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-}
-
 .game-container {
     margin: auto 0;
     width: 100%;
@@ -123,6 +95,10 @@ a.menu-links{
 .browser-game-div{
   margin: 0 auto;
   position: relative;
+}
+
+.browser-games{
+  padding: 0 10%;
 }
 
 .game-info-div {
@@ -140,7 +116,6 @@ a.menu-links{
 
 .game-title {
     padding: 5px 20px;
-    /* margin-top: 75px; */
     text-align: center;
     text-decoration:underline;  
 }
@@ -151,20 +126,11 @@ a.menu-links{
     display:inline-block;
 }
 
-.med-img-div {
-    width: 20%;
-    display: inline-block;
-}
-
 .game-btn-div {
     margin: 10px 0 20px 0;
 }
 
 .game-img-lg {
     width: 100%;
-    border-radius: 25px;
-}
-
-.game-img-med {
-    width: 100%;
+    border-radius: 1rem;
 }

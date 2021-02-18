@@ -1,12 +1,13 @@
 @media (max-width: 675px) {
+
   .dropdown-menu{
-        height:200px;
+        max-height:300px;
         overflow-y:auto;
         overflow-x: hidden;
      }
   }
 
-@media screen and  (min-width: 500px) {  
+@media screen and  (max-width: 768px) {  
   h1.fixed-menu-title {font-size:1rem;}
   div.border-right{border-right: none;}
 }
@@ -99,17 +100,13 @@ ul{
 em {
   font-weight: bold;
 }
+
 section.anchor::before{
   content: '';
   display: block;
   height:      50px;
   margin-top: -50px;
   visibility: hidden;
-}
-
-
-.browser-games{
-  padding: 0 10%;
 }
 
 .border-right{
@@ -139,14 +136,8 @@ section.anchor::before{
   margin-bottom: 0;
 }
 
-.main {
-  margin: 0;
-  display: table;
-}
-
 .fixed-menu-container {
   width: 100%;
-  /* padding: 10px 20px 10px; */
   background-color: #41aaa8;
   position: fixed;
   z-index: 3;
@@ -161,6 +152,7 @@ section.anchor::before{
   pointer-events: none;
   cursor: default;
 }
+
 .menu-links-container {
   margin-right: 40px;
 }
@@ -208,13 +200,6 @@ section.anchor::before{
   width: 70%;
 }
 
-.skill-row {
-  /* for single row*/
-  width: 50%;
-  margin: 0 auto;
-  display: table;
-}
-
 .skill-image {
   width: 100%;
   float: left;
@@ -237,24 +222,10 @@ section.anchor::before{
   float: left;
 }
 
-.skill-image-container-right {
-  /* for single row*/
-  margin-left: 10px;
-  width: 10%;
-  float: right;
-}
-
 .skill-text-container {
   width: 75%;
   float: left;
 }
-
-.skill-text-container-right {
-  /* for single row*/
-  width: 75%;
-  float: right;
-}
-
 
 /* Accomplishments */
 .accomp-row {
@@ -315,11 +286,6 @@ section.anchor::before{
   text-align: center;
 }
 
-.gamejam-img {
-  width: 24%;
-  padding: 0 0 20px 10px;
-}
-
 .game-jam-rows {
   /* for side by side*/
   margin: 0 auto;
@@ -347,7 +313,6 @@ section.anchor::before{
 }
 
 /* My Project list */
-
 .padding-bottom{
   padding-bottom: 10px;
 }
@@ -366,7 +331,6 @@ section.anchor::before{
   text-align: left;
   margin: 0 auto;
   width: 50%;
-  /* padding-bottom: 20px; */
 }
 .my-projects-container{
   margin-right: 10px;
