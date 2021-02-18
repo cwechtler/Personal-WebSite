@@ -1,10 +1,10 @@
 @media (max-width: 675px) {
-
-  .dropdown-menu{
-        max-height:300px;
-        overflow-y:auto;
-        overflow-x: hidden;
-     }
+  .dropdown-menu{max-height:300px; overflow-y:auto; overflow-x: hidden;}
+  p.summary{width: 100%;}
+  div.skill-double-row{width: 100%;}
+  div.gamejam-header{width: 100%;}
+  div.accomp-row{width: 100%;}
+  div.my-projects-double-row{width: 100%;}
   }
 
 @media screen and  (max-width: 768px) {  
