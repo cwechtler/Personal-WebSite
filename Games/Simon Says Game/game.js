@@ -84,6 +84,8 @@ function gameOver() {
     var audio = new Audio("sounds/Wrong 3.wav");
     audio.play();
     isStarted = false;
+    startButton.text("Restart");
+    startButton.removeClass("pressed").addClass("notpressed");
     infoText.text("Press any key to restart");
     $(".gameover-text").removeClass("hide").html("Game Over <br>Max Level: " + level);
     simonsNumbers = [];

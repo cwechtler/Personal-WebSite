@@ -1,3 +1,27 @@
+@media screen and (max-width: 600px) {
+  a#start{font-size: 1rem;}
+  a.footer-text-links{font-size: 1.5rem;}
+  h2.gameover-text{
+    font-size: 3rem;  
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  }
+}
+
+@media screen and  (max-width: 767px) {  
+  button.button{ width: calc(35vw ); height: calc(35vw); margin: 15px 15px;}
+  h1.title{font-size: calc(10vw);}
+  h1.info-text{font-size: calc(6vw);}
+}
+
+@media screen and  (min-width: 601px) {  
+  h2.gameover-text{font-size: 6rem;}
+}
+
+@media screen and  (min-width: 992px) {  
+  h2.gameover-text{font-size: 10rem;}
+}
+
+
 body {
   background-color: #26718f;
   margin: 0;
@@ -16,6 +40,10 @@ footer {
   color: #fff;
   font-family: "Merienda", cursive;
   text-align: center;
+}
+
+a{
+  text-decoration: none;
 }
 
 #start{
@@ -71,8 +99,8 @@ text-align: center;
   border-style: solid;
   box-shadow: 7px 7px #000000;
   margin: 30px 30px;
-  width: 250px;
-  height: 250px;
+  width: 20rem;
+  height: 20rem;
 }
 
 #pressed {
@@ -126,4 +154,10 @@ text-align: center;
   padding: 0 20px;
   font-size: 2rem;
   color: #DFDBE3;
+}
+
+.top-buttons, .bottom-buttons{
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
 }
