@@ -1,3 +1,4 @@
+var isTouchDevice = 'ontouchstart' in document.documentElement;
 var buttons = $("button");
 var startButton = $("#start");
 var infoText = $(".info-text");
@@ -24,36 +25,51 @@ function start(){
 }
 
 function playerPlays() {
-    buttons.mousedown(function () {
-        if (isPlayersTurn) {
-            $(this).attr("id", "pressed");
-            playersSequence.push(buttons.index(this));
-            infoText.text(playersSequence.length + " Correct - Level: " + level);
+    if(isTouchDevice){
+        buttons.on('touchstart', playersTurn);
+    }
+    else{
+        buttons.mousedown(playersTurn); 
+    }
+}
 
-            $(this).mouseup(function () {
+function playersTurn(){
+    if (isPlayersTurn) {
+        $(this).attr("id", "pressed");
+        playersSequence.push(buttons.index(this));
+        infoText.text(playersSequence.length + " Correct - Level: " + level);
+
+
+        if(isTouchDevice){
+            $(this).on('touchend', function(){
                 buttons.removeAttr("id");
             });
+        }
+        else{
+            $(this).mouseup(function () {
+                buttons.removeAttr("id");
+            });   
+        }
 
-            for (i = 0; i < playersSequence.length; i++) {
-                if (playersSequence[i] !== simonsNumbers[i]) {
-                    gameOver();
-                    return;
-                }
-            }
-
-            playAudio(this);
-
-            if (playersSequence.length === simonsNumbers.length) {
-                setTimeout(function () {
-                    isPlayersTurn = false;
-                    level++;
-                    infoText.text("Watch the Sequence");
-                    simonsNumbers.push(randomNumber());
-                    autoPlay();
-                }, 1000);
+        for (i = 0; i < playersSequence.length; i++) {
+            if (playersSequence[i] !== simonsNumbers[i]) {
+                gameOver();
+                return;
             }
         }
-    });
+
+        playAudio(this);
+
+        if (playersSequence.length === simonsNumbers.length) {
+            setTimeout(function () {
+                isPlayersTurn = false;
+                level++;
+                infoText.text("Watch the Sequence");
+                simonsNumbers.push(randomNumber());
+                autoPlay();
+            }, 1000);
+        }
+    }
 }
 
 function autoPlay() {
