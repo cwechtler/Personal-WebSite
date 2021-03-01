@@ -13,7 +13,6 @@ if(isTouchDevice){
 else{
     buttons.mousedown(pressed); 
 }
-run();
 
 function pressed(){
     $(this).attr("id", "butnPressed");
