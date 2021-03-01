@@ -116,6 +116,11 @@ section.anchor::before{
   visibility: hidden;
 }
 
+#butnPressed {
+  box-shadow: 0 0 20px white;
+  background-color: rgb(102, 102, 102);
+}
+
 .web-browser-hr{
   display: none;
   width: 50%;
@@ -344,7 +349,7 @@ section.anchor::before{
 .my-projects-double-row{
   text-align: left;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 }
 .my-projects-container{
   margin-right: 10px;
@@ -357,7 +362,13 @@ section.anchor::before{
   line-height: 1.5;
 }
 
-.glitch-img {
+.small-img {
+  margin-right: 30px;
+  width: 50%;
+  float: left;
+}
+
+.medium-img {
   margin-right: 30px;
   width: 60%;
   float: left;
@@ -375,9 +386,15 @@ section.anchor::before{
   background-image: -ms-linear-gradient(top, #6fb8e8, #0f0a3c);
   background-image: -o-linear-gradient(top, #6fb8e8, #0f0a3c);
   background-image: linear-gradient(to bottom, #6fb8e8, #0f0a3c);
-  -webkit-border-radius: 13;
-  -moz-border-radius: 13;
-  border-radius: 1rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  border-radius: .5rem;
+  
+  /* border-color:#41aaa8;
+  border-width: 1px;
+  border-style: solid; */
+  box-shadow: 4px 4px #000000;
+
   font-family: 'Crimson Text', serif;
   color: #ffffff;
   font-size: 20px;
