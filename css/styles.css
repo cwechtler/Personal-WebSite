@@ -20,6 +20,9 @@
 @media screen and  (max-width: 992px) {  
   .dropdown-menu{height: auto; max-height: calc(100vh - 200px); overflow-y:auto; overflow-x: hidden;}
   hr.web-browser-hr{display: block; width: 60%; clear: none; visibility: visible;}
+  .gamejam-text-container{
+    width: 100%;
+  }
 }
 
 @media screen and  (min-width: 992px) {  
@@ -89,6 +92,10 @@ a {
   padding: 10px 20px;
   font-size: 1.5rem;
 }
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 
 a:hover {
   color: white;
@@ -373,6 +380,11 @@ section.anchor::before{
   width: 60%;
   float: left;
 }
+.large-img {
+    margin-right: 30px;
+    width: 70%;
+    float: left;
+  }
 
 .contact-message {
   margin: 0 auto 30px auto;
@@ -425,3 +437,20 @@ section.anchor::before{
   color: white;
   font-size: .75rem;
 }
+
+.owl-carousel{
+    margin: 0 auto; 
+    width: 85%;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    padding: 0 10px !important;
+    font-size: 26px;
+    color:#105e62;
+}
+
+@media screen and  (max-width: 992px) {  
+    .gamejam-text-container{
+      width: 100%;
+    }
+  }

@@ -1,4 +1,4 @@
-//jshint esversion:8
+//jshint esversion:6
 
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 var buttons = $(".butn");
@@ -28,3 +28,7 @@ function pressed(){
         });   
     }
 }
+
+$(document).ready(function(){
+    $('a.disabled').html("In Development");
+  });
