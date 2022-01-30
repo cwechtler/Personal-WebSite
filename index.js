@@ -3,6 +3,9 @@
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 var buttons = $(".butn");
 
+
+$('a.disabled').html("In Development");
+
 $(".dropdown-item").click(function(){
     $('.navbar-collapse').collapse('hide');
 });
@@ -28,7 +31,3 @@ function pressed(){
         });   
     }
 }
-
-$(document).ready(function(){
-    $('a.disabled').html("In Development");
-  });
