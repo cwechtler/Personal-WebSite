@@ -3,6 +3,11 @@
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 var buttons = $(".butn");
 
+$(".jam-game").click(function(){
+    var $Anchor = $(this).closest('Section');
+    var anchorTag = $($Anchor).attr("id");
+    sessionStorage.setItem("Jam-Game", $(location).attr("href") + '#' + anchorTag);
+});
 
 $('a.disabled').html("In Development");
 
