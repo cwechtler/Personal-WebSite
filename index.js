@@ -6,6 +6,7 @@ var buttons = $(".butn");
 $(".jam-game").click(function(){
     var $Anchor = $(this).closest('Section');
     var anchorTag = $($Anchor).attr("id");
+    //"Jam-Game" SessionStorage item retrieved in Unity LevelManager.
     sessionStorage.setItem("Jam-Game", $(location).attr("href") + '#' + anchorTag);
 });
 
