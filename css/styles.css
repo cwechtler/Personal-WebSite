@@ -128,6 +128,10 @@ section.anchor::before{
   background-color: rgb(102, 102, 102);
 }
 
+.carousel-inner{
+    border-radius: 5px !important;
+}
+
 .web-browser-hr{
   display: none;
   width: 50%;

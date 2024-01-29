@@ -30,6 +30,10 @@ a.menu-links{
   text-decoration: none;
 }
 
+.carousel-inner{
+    border-radius: 1rem !important;
+}
+
 .my-projects-nav{
   margin: auto;
   background-color: #41aaa8;
